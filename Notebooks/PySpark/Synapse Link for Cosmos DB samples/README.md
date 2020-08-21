@@ -12,50 +12,50 @@ description: "Sample Azure Cosmos DB - Synapse Link notebooks "
 urlFragment: "cosmosdb-synapse-link-samples"
 ---
 
-# Azure Synapse Link for Azure Cosmos DB - Samples
+# Azure Cosmos DB 用 Azure Synapse Link - サンプル
 This Repo contains detailed Synapse Spark sample notebooks that shows end-to-end solutions using Azure Synapse Link for Azure Cosmos DB.
 
-## Prerequisites
+## 前提条件
 
-* [Azure Cosmos DB account](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal)
-* [Azure Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace) configured with a [Spark pool](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-apache-spark-pool)
+* [Azure Cosmos DB アカウント](https://docs.microsoft.com/ja-jp/azure/cosmos-db/create-cosmosdb-resources-portal)
+* [Spark pool](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-apache-spark-pool) で構成された [Azure Synapse ワークスペース](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-workspace) configured with a 
 
-## Scenario 1 - Internet of Things (IoT)
+## シナリオ 1 - Internet of Things (IoT)
 
-In this scenario, you will ingest streaming and batch IoT data into Azure Cosmos DB using Azure Synapse Spark, perform Joins and aggregations using Azure Synapse Link and perform [anomaly detection](https://azure.microsoft.com/en-us/services/cognitive-services/anomaly-detector/) using Azure Cognitive Services on Spark (MMLSpark).
+このシナリオでは、Azure Synapse Spark を使用して Azure Cosmos DB にストリーミングとバッチ IoT データを取り込み、Azure Synapse Link を使用して結合と集計を実行し、Azure Cognitive Services on Spark (MMLSpark) を使用して [anomaly detection](https://azure.microsoft.com/ja-jp/services/cognitive-services/anomaly-detector/) を実行します。
 
 ![IoT-components-dataflow](images/dataflow.PNG)
-### Notebooks Execution
+### ノートブックの実行
 
 Import the below four synapse spark notebooks under the "IoT/spark-notebooks/pyspark/" dir on to the Synapse workspace and attach the Spark pool created in the prerequisite to the notebooks.
-1. [01-CosmosDBSynapseStreamIngestion: Ingest streaming data into Azure Cosmos DB collection using Structured Streaming](IoT/spark-notebooks/pyspark/01-CosmosDBSynapseStreamIngestion.ipynb)
-1. [02-CosmosDBSynapseBatchIngestion: Ingest Batch data into Azure Cosmos DB collection using Azure Synapse Spark](IoT/spark-notebooks/pyspark/02-CosmosDBSynapseBatchIngestion.ipynb)
-1. [03-CosmosDBSynapseJoins: Perform Joins and aggregations across Azure Cosmos DB collections using Azure Synapse Link](IoT/spark-notebooks/pyspark/03-CosmosDBSynapseJoins.ipynb)
-1. [04-CosmosDBSynapseML: Perform Anomaly Detection using Azure Synapse Link and Azure Cognitive Services on Synapse Spark (MMLSpark)](IoT/spark-notebooks/pyspark/04-CosmosDBSynapseML.ipynb)
+1. [01-CosmosDBSynapseStreamIngestion: 構造化ストリーミングを使用してAzure Cosmos DBコレクションにストリーミングデータを取り込む](IoT/spark-notebooks/pyspark/01-CosmosDBSynapseStreamIngestion.ipynb)
+1. [02-CosmosDBSynapseBatchIngestion: Azure Synapse Spark を使用してバッチデータを Azure Cosmos DB コレクションに取り込む](IoT/spark-notebooks/pyspark/02-CosmosDBSynapseBatchIngestion.ipynb)
+1. [03-CosmosDBSynapseJoins: Azure Synapse Link を使用して Azure Cosmos DB コレクション全体で結合と集計を実行する](IoT/spark-notebooks/pyspark/03-CosmosDBSynapseJoins.ipynb)
+1. [04-CosmosDBSynapseML: Synapse Spark (MMLSpark) で Azure Synapse Link と Azure Cognitive Services を使用して異常検出を実行する](IoT/spark-notebooks/pyspark/04-CosmosDBSynapseML.ipynb)
 
 
 
-## Scenario 2 - Retail Forecasting
+## シナリオ 2 - 小売予測
 
-In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure Synapse Spark, perform joins and aggregations using Azure Synapse Link and perform Forecasting using [Azure Automated Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml).
+In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure Synapse Spark, perform joins and aggregations using Azure Synapse Link and perform Forecasting using [Azure Automated Machine Learning](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml).
 
 
 ![IoT-components-dataflow](images/pipeline.PNG)
 
 
-### Notebooks Execution
+### ノートブックの実行
 
 Import the below two synapse spark notebooks under the "Retail/spark-notebooks/pyspark/" dir on to the Synapse workspace and attach the Spark pool created in the prerequisite to the notebooks.
-1. [Batch Ingestion of Sales Forecasting data on Synapse Spark](Retail/spark-notebooks/pyspark/1CosmoDBSynapseSparkBatchIngestion.ipynb)
-1. [Perform Sales Forecasting using Azure Synapse Link and Azure Automated Machine Learning on Synapse Spark](Retail/spark-notebooks/pyspark/2SalesForecastingWithAML.ipynb)
+1. [Synapse Spark での売上予測データのバッチ取り込み](Retail/spark-notebooks/pyspark/1CosmoDBSynapseSparkBatchIngestion.ipynb)
+1. [Synapse Spark で Azure Synapse Link と Azure Automated Machine Learning を使用して販売予測を実行する](Retail/spark-notebooks/pyspark/2SalesForecastingWithAML.ipynb)
 
 
-## Key concepts
-* [Azure Synapse Link for Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link)
-* [Azure Cosmos DB Analytical Store](https://review.docs.microsoft.com/en-us/azure/cosmos-db/analytical-store-introduction?branch=release-build-cosmosdb)
-* [Configure Synapse Link for Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/synapse-link-frequently-asked-questions)
-* [Connect to Synapse Link from Synapse Studio](https://docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db?branch=release-build-synapse)
-* [Query Cosmos DB Analytical Store with Synapse Spark](https://docs.microsoft.com/en-us/azure/synapse-analytics/synapse-link/how-to-query-analytical-store-spark?branch=release-build-synapse)
+## 重要な概念
+* [Azure Cosmos DB 用 Azure Synapse Link](https://docs.microsoft.com/ja-jp/azure/cosmos-db/synapse-link)
+* [Azure Cosmos DB 分析ストア](https://docs.microsoft.com/ja-jp/azure/cosmos-db/analytical-store-introduction)
+* [Azure Cosmos DB 用 Synapse Link を構成する](https://docs.microsoft.com/ja-jp/azure/cosmos-db/synapse-link-frequently-asked-questions)
+* [Synapse Studio から Synapse Link に接続する](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/synapse-link/how-to-connect-synapse-link-cosmos-db)
+* [Synapse Spark を使用した Cosmos DB 分析ストアのクエリ](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/synapse-link/how-to-query-analytical-store-spark)
 
 
 ## Contributing
