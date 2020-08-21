@@ -8,7 +8,7 @@
  
 ![upload_datasets](images/upload_datasets.png)
 
-2.  Azure Portal を使用して、Synapse ワークスペースに関連付けられているストレージアカウントのアクセス制御 (IAM) タブに移動し、+Add をクリックして、役割の割り当てを追加し、自分をデータ共同作成者の役割に追加します。これは、Azure Synapse Spark Pool を使用したデータベースやテーブルの作成など、Spark メタデータの操作に必要です。
+2.  Azure Portal を使用して、Synapse ワークスペースに関連付けられているストレージアカウントのアクセス制御 (IAM) タブに移動し、+Add をクリックして、役割の割り当てを追加し、自分をストレージ BLOB データ共同作成者の役割に追加します。これは、Azure Synapse Spark Pool を使用したデータベースやテーブルの作成など、Spark メタデータの操作に必要です。
 
 3. Azure Portal を使用して、Azure Cosmos DB アカウントのデータエクスプローラーに移動し、CosmosDBIoTDemo というデータベースを作成します。 
 
