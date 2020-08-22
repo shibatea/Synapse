@@ -22,7 +22,7 @@ urlFragment: "cosmosdb-synapse-link-samples"
 
 ## シナリオ 1 - Internet of Things (IoT)
 
-このシナリオでは、Azure Synapse Spark を使用して Azure Cosmos DB にストリーミングとバッチ IoT データを取り込み、Azure Synapse Link を使用して結合と集計を実行し、Azure Cognitive Services on Spark (MMLSpark) を使用して [anomaly detection](https://azure.microsoft.com/ja-jp/services/cognitive-services/anomaly-detector/) を実行します。
+このシナリオでは、Azure Synapse Spark を使用して Azure Cosmos DB にストリーミングとバッチ IoT データを取り込み、Azure Synapse Link を使用して結合と集計を実行し、Azure Cognitive Services on Spark (MMLSpark) を使用して [Anomaly Detector](https://azure.microsoft.com/ja-jp/services/cognitive-services/anomaly-detector/) を実行します。
 
 ![IoT-components-dataflow](images/dataflow.PNG)
 ### ノートブックの実行
