@@ -18,7 +18,7 @@ urlFragment: "cosmosdb-synapse-link-samples"
 ## 前提条件
 
 * [Azure Cosmos DB アカウント](https://docs.microsoft.com/ja-jp/azure/cosmos-db/create-cosmosdb-resources-portal)
-* [Spark pool](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-apache-spark-pool) で構成された [Azure Synapse ワークスペース](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-workspace) configured with a 
+* [Spark pool](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-apache-spark-pool) で構成された [Azure Synapse ワークスペース](https://docs.microsoft.com/ja-jp/azure/synapse-analytics/quickstart-create-workspace)
 
 ## シナリオ 1 - Internet of Things (IoT)
 
