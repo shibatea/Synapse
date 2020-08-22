@@ -27,7 +27,7 @@ urlFragment: "cosmosdb-synapse-link-samples"
 ![IoT-components-dataflow](images/dataflow.PNG)
 ### ノートブックの実行
 
-Import the below four synapse spark notebooks under the "IoT/spark-notebooks/pyspark/" dir on to the Synapse workspace and attach the Spark pool created in the prerequisite to the notebooks.
+"IoT/spark-notebooks/pyspark/" ディレクトリの下にある以下 4 つの Synapse Spark ノートブックを Synapse ワークスペースにインポートし、前提条件で作成した Spark プールをノートブックにアタッチします。
 1. [01-CosmosDBSynapseStreamIngestion: 構造化ストリーミングを使用してAzure Cosmos DBコレクションにストリーミングデータを取り込む](IoT/spark-notebooks/pyspark/01-CosmosDBSynapseStreamIngestion.ipynb)
 1. [02-CosmosDBSynapseBatchIngestion: Azure Synapse Spark を使用してバッチデータを Azure Cosmos DB コレクションに取り込む](IoT/spark-notebooks/pyspark/02-CosmosDBSynapseBatchIngestion.ipynb)
 1. [03-CosmosDBSynapseJoins: Azure Synapse Link を使用して Azure Cosmos DB コレクション全体で結合と集計を実行する](IoT/spark-notebooks/pyspark/03-CosmosDBSynapseJoins.ipynb)
@@ -37,7 +37,7 @@ Import the below four synapse spark notebooks under the "IoT/spark-notebooks/pys
 
 ## シナリオ 2 - 小売予測
 
-In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure Synapse Spark, perform joins and aggregations using Azure Synapse Link and perform Forecasting using [Azure Automated Machine Learning](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml).
+このシナリオでは、Azure Synapse Spark を使用して小売データを Azure Cosmos DB に取り込み、Azure Synapse Link を使用して結合と集計を実行し、[Azure Automated Machine Learning](https://docs.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml) を使用して予測を実行します。
 
 
 ![IoT-components-dataflow](images/pipeline.PNG)
@@ -45,7 +45,7 @@ In this scenario, you will ingest Retail data into Azure Cosmos DB using Azure S
 
 ### ノートブックの実行
 
-Import the below two synapse spark notebooks under the "Retail/spark-notebooks/pyspark/" dir on to the Synapse workspace and attach the Spark pool created in the prerequisite to the notebooks.
+"Retail/spark-notebooks/pyspark/" ディレクトリにある以下 2 つの Synapse Spark ノートブックを Synapse ワークスペースにインポートし、前提条件で作成した Spark プールをノートブックにアタッチします。
 1. [Synapse Spark での売上予測データのバッチ取り込み](Retail/spark-notebooks/pyspark/1CosmoDBSynapseSparkBatchIngestion.ipynb)
 1. [Synapse Spark で Azure Synapse Link と Azure Automated Machine Learning を使用して販売予測を実行する](Retail/spark-notebooks/pyspark/2SalesForecastingWithAML.ipynb)
 
