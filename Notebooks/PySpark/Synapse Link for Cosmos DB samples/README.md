@@ -13,7 +13,7 @@ urlFragment: "cosmosdb-synapse-link-samples"
 ---
 
 # Azure Cosmos DB 用 Azure Synapse Link - サンプル
-This Repo contains detailed Synapse Spark sample notebooks that shows end-to-end solutions using Azure Synapse Link for Azure Cosmos DB.
+このリポジトリには、Azure Cosmos DB 用 Azure Synapse Link を使用したエンドツーエンドのソリューションを示す詳細な Synapse Spark サンプルノートブックが含まれています。
 
 ## 前提条件
 
