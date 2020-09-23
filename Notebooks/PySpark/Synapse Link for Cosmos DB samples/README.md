@@ -49,15 +49,15 @@ urlFragment: "cosmosdb-synapse-link-samples"
 1. [Synapse Spark での売上予測データのバッチ取り込み](Retail/spark-notebooks/pyspark/1CosmoDBSynapseSparkBatchIngestion.ipynb)
 1. [Synapse Spark で Azure Synapse Link と Azure Automated Machine Learning を使用して販売予測を実行する](Retail/spark-notebooks/pyspark/2SalesForecastingWithAML.ipynb)
 
-## シナリオ 3 - Azure Cosmos DB API for MongoDB によるデータの取り込み、クエリ、スキーマの更新
+## シナリオ 3 - Azure Cosmos DB API for MongoDB によるデータの取り込み、クエリおよびスキーマの更新
 
 こちらのシンプルなシナリオでは、Azure Synapse Spark を使用して Cosmos DB MongoDB API コンテナーにデータを取り込み、Spark を使用してクエリを実行する方法と、[スキーマの更新を管理する](https://docs.microsoft.com/ja-jp/azure/cosmos-db/analytical-store-introduction#analytical-schema) 方法を学習します。
 
 ### MongoDB ノートブックの実行
 
-Import the below synapse spark notebooks under the "MongoDB/spark-notebooks/pyspark/" dir into your Synapse workspace and attach the Spark pool created in the prerequisite to the notebooks.
+"MongoDB/spark-notebooks/pyspark/" ディレクトリにある以下の Synapse Spark ノートブックを Synapse ワークスペースにインポートし、前提条件で作成した Spark プールをノートブックにアタッチします。
 
-1. [Data Ingestion and Queries with Synapse Spark for Cosmos DB API for MongoDB](MongoDB/spark-notebooks/pyspark/01-CosmosDBSynapseMongoDB.ipynb)
+1. [Cosmos DB API for MongoDB 用の Synapse Spark を使用したデータの取り込みとクエリ](MongoDB/spark-notebooks/pyspark/01-CosmosDBSynapseMongoDB.ipynb)
 
 ## 重要な概念
 * [Azure Cosmos DB 用 Azure Synapse Link](https://docs.microsoft.com/ja-jp/azure/cosmos-db/synapse-link)
