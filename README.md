@@ -8,30 +8,30 @@ description: "Samples for Azure Synapse AnalyticS"
 urlFragment: "update-this-to-unique-url-stub"
 ---
 
-# Samples for Azure Synapse Analytics
+# Azure Synapse Analytics のサンプル
 
-## Resources
-* Documentation
+## リソース
+* ドキュメンテーション
     * GA Docs [aka.ms/SynapseDocs](https://aka.ms/SynapseDocs)
     * Workspaces Preview Docs [aka.ms/SynapseWorkspaceDocs](aka.ms/SynapseWorkspaceDocs)
-* Samples - [aka.ms/SynapseSamples](https://aka.ms/Synapsesamples) - this location
+* サンプル - [aka.ms/SynapseSamples](https://aka.ms/Synapsesamples) - この場所
 
-## Contents
+## コンテンツ
 
-*  [CLI](https://github.com/Azure-Samples/Synapse/tree/master/CLI) - Azure CLI
-*  [Data](https://github.com/Azure-Samples/Synapse/tree/master/Data) - Small sample data sets
-*  [PowerShell](https://github.com/Azure-Samples/Synapse/tree/master/PowerShell) - Azure PowerShell scripts
-*  [Notebooks](https://github.com/Azure-Samples/Synapse/tree/master/Notebooks) - Notebook files
-*  [Spark](https://github.com/Azure-Samples/Synapse/tree/master/Spark) - Code for using Apache Spark
-*  [SQL](https://github.com/Azure-Samples/Synapse/tree/master/SQL) - T-SQL scripts 
+*  [CLI](CLI) - Azure CLI
+*  [Data](Data) - 小さなサンプルデータセット
+*  [PowerShell](PowerShell) - Azure PowerShell スクリプト
+*  [Notebooks](Notebooks) - ノートブックファイル
+*  [Spark](Spark) - Apache Spark を使用するためのコード
+*  [SQL](SQL) - T-SQL スクリプト 
 
-## Scenario-based Samples
+## シナリオベースのサンプル
 
-The following samples may span across several of the technology specific samples:
+以下のサンプルは、技術の特化したサンプルのいくつかにまたがる可能性があります:
 
-### Tweet Analysis ([Description and notebooks/code files](Notebooks/Spark.NET%20C%23/Tweets) - [Sample Data](Data/Tweets))
+### ツイート分析 ([説明および ノートブック/コード ファイル](Notebooks/Spark.NET%20C%23/Tweets) - [サンプルデータ](Data/Tweets))
 
-Shows .NET for Spark and shared meta data experience between Spark created tables and SQL.
+.NET for Spark および Spark で作成されたテーブルと SQL との間での共有メタデータエクスペリエンスを示します。
 
-## Contributing
-This project welcomes contributions and suggestions. See the [Contributor's guide](https://github.com/Azure-Samples/Synapse/tree/master/CONTRIBUTE.md)
+## 貢献する
+このプロジェクトは貢献と提案を歓迎します。[Contributor's guide](CONTRIBUTE.md)を参照してください。
